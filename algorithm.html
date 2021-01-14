@@ -12,7 +12,7 @@ s:string ;
 BEGIN
 read(s)
 
-FOR a FROM 1 to s.lenght DO
+FOR a FROM 1 to s.lenght STEP DO
 IF(s[a] != " ") THEN 
  a++
 <!--we put condition if character different the space donc put 1 in a -->
@@ -20,7 +20,7 @@ IF(s[a] != " ") THEN
 
 
 
- FOR a FROM 1 to s.lenght DO
+ FOR a FROM 1 to s.lenght STEP DO
 IF(s[a] = " " OR ".") THEN 
  b=b+1 <!--or we write b++-->
  <!-- expamle the sentence i am here. / we have 2 space and point donc we have 3 words -->
@@ -28,7 +28,7 @@ IF(s[a] = " " OR ".") THEN
  WRITE(tThe number of words in the sentence, b )
 
 
- FOR a FROM 1 to s.lenght DO
+ FOR a FROM 1 to s.lenght STEP DO
 IF(s[a] = "A" OR "E" OR "I" OR "O" )  THEN <!--vowels A E I O-->
  c++
 
