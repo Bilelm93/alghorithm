@@ -1,0 +1,64 @@
+ALGORITHM algorithm_sentence
+VAR
+    sentence : STRING ;
+    nbchar , nbword , nbvow , i : INTEGER ;
+BEGIN
+ nbvow := 0;
+ nbchar :=0;
+ nbword:= 1;
+ i :=0;
+ 
+FOR i FROM 1 to sentence.lenght DO
+    i++ ;
+    IF (sentenc[i] = " ") THEN
+        nbword+=1;
+
+    ELSE ( sentenc[i] = "A" OR  sentenc[i] ="E" OR sentenc[i] ="I" OR sentenc[i] ="O") THEN
+        nbvow+=1
+    END_IF
+
+
+
+    IF (sentenc[i] <> ".") THEN
+        nbchar +=1 ;
+    END_IF
+       
+  
+
+END_FOR
+
+ WRITE("the numbre of the words is :" , nbword);
+ WRITE("the numbre of the characters is :" ,  nbchar);
+ WRITE("the numbre of the vowels  is :" , nbvow);
+
+END
+
+
+
+
+
+
+
+
+
+FOR a FROM 1 to s.lenght STEP DO
+IF(s[a] != " ") THEN 
+ a++
+
+ WRITE('the number of characters:', a )
+
+
+
+ FOR a FROM 1 to s.lenght STEP DO
+IF(s[a] = " " OR ".") THEN 
+ b=b+1 
+
+ WRITE('The number of words in the sentenc:', b )
+
+
+ FOR a FROM 1 to s.lenght STEP DO
+IF(s[a] =  )  THEN <!--vowels A E I O-->
+ c++
+
+ WRITE('the number of characters:', c )
+
